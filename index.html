@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Lerara</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/zoom.menu.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/content.css">
+    <!--<link rel="stylesheet" type="text/css" media="(max-width:600px)" href="assets/css/content-small.css">-->
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<script src="assets/js/zoom.menu-min.js"></script>
+</head>
+<body>
+<div class="content-wrapper">
+	<div id="my-zoom-menu" class="zm-animation-wrapper zm-closed">
+		<div class="zm-menu">
+			<ul class="zb-menu-list">
+				<li>
+					<a href="#scroll-to-about" zm-disabled="true" zm-ajax="true" zm-reload-close="true">
+						About
+					</a>
+				</li>
+				<li>
+					<a href="#scroll-to-unsere-plane" zm-disabled="true" zm-ajax="true" zm-reload-close="true">
+						Unsere Pläne
+					</a>
+				</li>
+				<li><a href="#scroll-to-anker">Menu Item 3</a></li>
+
+			</ul>
+		</div>
+		<div class="zm-content-wrapper">
+			<div class="zm-content">
+				<button onclick="zoomMenu.show();" class="menu-button"></button>
+					<div class="head-line" align="center">
+
+                         <img src="/assets/images/Vanamo_Logo.png"   width="30%" height="30%" >
+                         <h2 align="center">Mit geringnem Aufwand <br>Geld gespart</br></h2>
+			</div>
+				
+				<div id="scroll-to-about" class="about">
+
+					<p><img src="/assets/images/big-square.gif" align="left" hspace="5" vspace="5">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec libero ex. Donec auctor lobortis orci in semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus ex risus, interdum ut feugiat non, sollicitudin ac dui. In purus ipsum, sollicitudin tincidunt ornare ac, fringilla vitae eros. Curabitur hendrerit aliquam ipsum nec pretium. Proin at tortor id lacus tincidunt eleifend.
+					</p>
+                    <br clear="all">
+					<p><img src="/assets/images/big-square.gif" align="right" hspace="5">
+						In fringilla convallis diam non interdum. Vestibulum commodo libero non justo eleifend ornare. Vestibulum posuere erat congue justo suscipit pharetra sit amet a libero. Quisque sit amet tincidunt tellus. Ut quis nunc sed erat suscipit tristique eget eget enim. Sed tempus laoreet porta. Vestibulum vestibulum ligula in lectus condimentum, et scelerisque mauris elementum. Sed facilisis lorem ac nisi aliquam tempus a in leo. Aenean id libero gravida, convallis tortor placerat, blandit magna.
+					</p>
+                    <br clear="all">
+					<p><img src="/assets/images/big-square.gif" align="left" hspace="5">
+						Sed convallis mauris massa, cursus laoreet ante elementum suscipit. Etiam eleifend risus elit, sed pretium nisi semper et. Pellentesque ipsum ante, mollis eu libero et, viverra interdum metus. Suspendisse ipsum neque, volutpat eget elementum non, rutrum sed sapien. Proin consequat metus eu neque tincidunt, nec egestas velit convallis. Praesent vestibulum dui a purus aliquet tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ullamcorper, ligula in porttitor aliquam, mi felis viverra leo, ut varius eros tellus eu orci. Praesent feugiat eu orci vel gravida. Fusce vel justo tincidunt, vestibulum nibh vitae, sagittis arcu. Morbi feugiat, erat nec consequat sodales, nunc felis venenatis nunc, id vestibulum ex mi vitae urna. Praesent vestibulum ipsum ut erat ultricies, in rhoncus felis volutpat. Fusce nibh ipsum, finibus in velit egestas, sodales sodales massa. Nunc sed magna quis tortor ullamcorper scelerisque. Donec finibus ex vitae urna convallis semper.
+					</p>
+                <br clear="all">
+					<p><img src="/assets/images/big-square.gif" align="right" hspace="5">
+						Pellentesque malesuada pellentesque turpis nec mattis. Aenean vel eros quis felis pretium dapibus. Phasellus laoreet turpis nec elementum feugiat. Nam vitae mauris mollis enim dignissim viverra. Nunc vitae nunc nibh. Nunc finibus, nisl eu viverra hendrerit, libero ipsum tempus diam, sit amet vehicula risus enim vel dolor. Sed fermentum dignissim nibh. Sed sed commodo dolor, fringilla euismod risus. Nullam dictum nibh vehicula dui aliquet, nec convallis odio commodo. Nulla dolor ex, imperdiet a feugiat vitae, euismod quis ipsum. Integer hendrerit tellus sit amet eros venenatis, non ornare ex faucibus. In bibendum scelerisque maximus. Nam eu porta libero. Quisque ornare tempus ornare. Praesent non urna ante. 
+					</p>
+				</div>
+
+				<p>&nbsp;</p>
+
+
+                <p>&nbsp;</p>
+				<div id="scroll-to-unsere-plane" class="unsere-plane">
+					<h2 align="center">Unsere Pläne</h2>
+					<p align="center">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec libero ex. Donec auctor lobortis orci in semper.
+					</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	var zoomMenu = new ZMZoomMenu('my-zoom-menu');
+</script>
+<script src="//code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
