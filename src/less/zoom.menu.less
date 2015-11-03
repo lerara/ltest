@@ -1,0 +1,77 @@
+.zm-animation-wrapper {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	top: 0px;
+	left: 0px;
+	width: 100% !important;
+	height: 100% !important;
+	overflow: hidden;
+
+
+	.zm-menu, .zm-content-wrapper, .zm-touch {
+		padding: 0;
+		margin: 0;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+
+		-webkit-transition: transform 0.2s ease-in-out;
+        -moz-transition: 	transform 0.2s ease-in-out;
+        -ms-transition: 	transform 0.2s ease-in-out;
+        -o-transition: 		transform 0.2s ease-in-out;
+        transition: 		transform 0.2s ease-in-out;
+	}
+
+	.zm-menu {
+		overflow: scroll;
+		padding-right: 20px; // move scroll bar out
+
+		ul {
+			margin: 20px;
+
+			li {
+				display: block;
+				padding: 6px 0px 6px 0px;
+			}
+		}
+	}
+
+	.zm-content-wrapper {
+		-webkit-transition: translate(25%, 0%) scale(0.5,0.5);
+		-moz-transition: 	translate(25%, 0%) scale(0.5,0.5);
+		-ms-transition: 	translate(25%, 0%) scale(0.5,0.5);
+		-o-transition: 		translate(25%, 0%) scale(0.5,0.5);
+		transform: 			translate(25%, 0%) scale(0.5,0.5);
+		overflow: hidden;
+
+ 		.zm-content {
+ 			margin: 0;
+ 			padding: 0;
+ 			width: 100%;
+			height: 100%;
+			top:0px;
+			left:0px;
+ 			position: relative;
+ 			overflow: scroll; /* has to be scroll, not auto */
+ 			-webkit-overflow-scrolling: touch;
+ 		}
+	}
+
+	&.zm-closed {
+
+		.zm-menu {
+			-webkit-transition: translate(-50%, 0%) scale(2.0,2.0);
+			-moz-transition: 	translate(-50%, 0%) scale(2.0,2.0);
+			-ms-transition: 	translate(-50%, 0%) scale(2.0,2.0);
+			-o-transition: 		translate(-50%, 0%) scale(2.0,2.0);
+			transform: 			translate(-50%, 0%) scale(2.0,2.0);
+		}
+
+		.zm-content-wrapper {
+			transform: none;
+		}
+	}
+}
